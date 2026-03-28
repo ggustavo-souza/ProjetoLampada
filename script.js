@@ -38,5 +38,5 @@ function pararPiscar() {
 
 function animacao() {
     console.log("funcionando")
-    lampada.style.transform = "scale(1.5)"
+    lampada.style.transform = "rotate(360deg)"
 }
