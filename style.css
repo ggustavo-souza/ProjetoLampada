@@ -1,3 +1,23 @@
 img {
     margin: 2rem;
+    transform: rotate(360);
+    transition: 2s;
+}
+
+main {
+    display: flex;
+    gap: 1rem;
+}
+
+input {
+    border: 2px solid plum;
+    background-color: khaki;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: 0.3s;
+}
+
+input:hover {
+    cursor: pointer;
+    background-color: plum;
 }

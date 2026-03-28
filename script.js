@@ -1,4 +1,4 @@
-let lampada = document.getElementById("lampada")
+const lampada = document.getElementById("lampada")
 
 function ligar() {
     lampada.setAttribute('src', "imgs/lampadaAcesa.gif")
@@ -23,10 +23,20 @@ function piscar() {
     }, [500])
 }
 
+let intervaloId;
+
 function piscarAutomatico() {
-    setInterval(piscar, 1000);
+    if (!intervaloId) {
+        intervaloId = setInterval(piscar, 1000);
+    }
 }
 
 function pararPiscar() {
-    clearInterval(piscarAutomatico) 
+    clearInterval(intervaloId);
+    intervaloId = null;
+}
+
+function animacao() {
+    console.log("funcionando")
+    lampada.style.transform = "scale(1.5)"
 }
