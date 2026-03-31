@@ -21,3 +21,12 @@ input:hover {
     cursor: pointer;
     background-color: plum;
 }
+
+header {
+    text-align: center;
+}
+
+main {
+    display: inline-block;
+    gap: 2rem;
+}
